@@ -5,8 +5,6 @@
 }
 
 body {
- 
-
   padding: 0;
   box-sizing: border-box;
 }
@@ -29,7 +27,7 @@ nav ul {
 
 nav a {
   font-family: "Public Sans", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
@@ -51,7 +49,6 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
-
 
 .nav-ofertas {
   font-family: "Public Sans", sans-serif;
@@ -111,7 +108,7 @@ nav a:hover::after {
   align-items: center;
   width: 100dvw;
   background-color: #fff;
-  padding: 15px 20px 0 20px;
+  padding: 15px 23px 0 20px;
   margin: 0; /* Elimina el margen para evitar superposición */
   position: relative; /* Asegura que no se salga de su flujo */
   z-index: 1; /* Asegura que otros elementos no lo cubran o queden debajo */
@@ -184,8 +181,6 @@ nav a:hover::after {
   padding-bottom: 5px;
 }
 
-
-
 .nav-container {
   width: 100dvw;
   display: flex;
@@ -207,96 +202,92 @@ nav a:hover::after {
 
 #hero-video video {
   width: 100%;
-  object-fit: cover; 
-  margin: 0 auto; 
+  object-fit: cover;
+  margin: 0 auto;
   overflow: hidden;
   height: 100%;
   z-index: -1;
-  
 }
 
 #hero-video video {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   margin: 0;
-  display: block; 
+  display: block;
 }
 
 main {
-    max-width: 1500px;
-    margin: 0 auto;
-    box-sizing: border-box;
+  max-width: 1500px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 #nueva-lenceria-top {
-
-  background-color: #000; 
+  background-color: #000;
   color: #fff;
-  text-align: center; 
-  padding: 50px 20px; 
+  text-align: center;
+  padding: 50px 20px;
 }
 
 #nueva-lenceria-top h2 {
   font-family: "Cinzel Decorative", serif;
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   font-weight: 400;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 #nueva-lenceria-top p {
   font-family: "Public Sans", sans-serif;
   font-weight: 200;
-  font-size: 1rem; 
-  margin-bottom: 20px; 
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 #nueva-lenceria-top button {
-  background-color: #000; 
-  color: #fff; 
-  border: none; 
-  padding: 10px 20px; 
-  font-size: 1rem; 
-  font-family: "Public Sans", sans-serif; 
-  font-weight: bold; 
-  text-transform: uppercase; 
-  position: relative; 
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: "Public Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
   cursor: pointer;
 }
 
 #nueva-lenceria-top button::after {
-  content: ""; 
-  position: absolute; 
-  bottom: -5px; 
-  left: 50%; 
-  transform: translateX(-50%); 
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 50%;
-  height: 2px; 
-  background-color: #fff; 
-  transition: width 0.3s ease; 
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
 }
 
 #nueva-lenceria-top button:hover::after {
   width: 100%;
 }
 
-
 #nueva-lenceria-bottom {
-  position: relative; 
+  position: relative;
   width: 100%;
-  margin: 0 auto; 
-  overflow: hidden; 
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-
 #nueva-lenceria-bottom .content-overlay {
-  position: absolute; 
+  position: absolute;
   top: 50%;
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  text-align: center; 
-  color: #fff; 
-  z-index: 2; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
 }
 
 #nueva-lenceria-bottom .content-overlay h3 {
@@ -304,14 +295,14 @@ main {
   font-weight: 100;
   font-style: normal;
   font-size: 1.5rem;
-  color: #ffffff; 
+  color: #ffffff;
   font-weight: 300;
   margin-bottom: 25px;
 }
 
 #nueva-lenceria-bottom .content-overlay h2 {
   font-family: "Cinzel Decorative", serif;
-  font-size: 5rem; 
+  font-size: 5rem;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -324,8 +315,8 @@ main {
 
 #nueva-lenceria-bottom .content-overlay button {
   background-color: transparent;
-  color: #fff; 
-  border: 2px solid #fff; 
+  color: #fff;
+  border: 2px solid #fff;
   padding: 10px 30px;
   font-size: 1.5rem;
   font-family: "Public Sans", sans-serif;
@@ -336,19 +327,15 @@ main {
 
 #nueva-lenceria-bottom .content-overlay button:hover {
   background-color: #fff;
-  color: #000; 
-  border: 2px solid #fff; 
+  color: #000;
+  border: 2px solid #fff;
 }
-
-
 
 #nueva-lenceria-bottom .center-text-image-section img {
-  width: 100%; 
-  height: auto; 
-  object-fit: cover; 
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
-
-
 
 #en-tendencia {
   text-align: center;
@@ -358,18 +345,18 @@ main {
 
 #en-tendencia h2 {
   font-family: "Cinzel", serif;
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   font-weight: 400;
-  margin-bottom:20px; 
+  margin-bottom: 20px;
   color: #000;
   text-transform: uppercase;
 }
 
-
+/* Contenedor del carrusel */
 .product-carousel {
   display: flex;
-  gap: 30px;
-  justify-content: center;
+  gap: 15px;
+  justify-content: flex-start; /* Alinea las cartas al inicio */
   flex-wrap: nowrap;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -382,8 +369,8 @@ main {
 .product-card {
   position: relative;
   background-color: #fff;
-  width: 330px;
-  height: 500px;
+  width: 350px;
+  height: 550px;
   text-align: center;
   overflow: hidden;
   display: flex;
@@ -406,6 +393,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   z-index: 1;
 }
 
@@ -427,35 +415,34 @@ main {
 
 .product-price {
   font-family: "Public Sans", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #000;
   margin-top: 20px;
   text-align: left;
 }
 
+
 #beauty-section {
   position: relative;
   width: 100%;
-  height: 100vh; 
+  height: auto; /* Permite que la altura se ajuste automáticamente */
   overflow: hidden;
+  display: flex; /* Asegura que el contenido interno esté centrado */
+  justify-content: center;
+  align-items: center;
 }
 
 #beauty-section img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover;
-  z-index: 1;
+  width: 100%;
+  height: auto; /* Escala proporcionalmente la altura */
 }
 
 .beauty-content {
   position: absolute;
   top: 45%;
-  left: 35%;
-  transform: translate(-50%, -50%);
+  left: 40%;
+  transform: translate(-50%, -50%); /* Centra el texto */
   text-align: center;
   color: #fff;
   z-index: 2;
@@ -470,12 +457,11 @@ main {
 
 .beauty-content h1 {
   font-family: "Cinzel", serif;
-  font-size: 4rem; 
+  font-size: 4rem;
   font-weight: 400;
-  margin-bottom:20px; 
+  margin-bottom: 20px;
   color: #ffffff;
   text-transform: uppercase;
-  
 }
 
 .beauty-content p {
@@ -499,6 +485,7 @@ main {
   color: #000;
   font-weight: bold;
 }
+
 /* Descubre las Colecciones */
 /* Carrusel de Videos */
 #descubre-colecciones {
@@ -551,7 +538,7 @@ main {
   left: 0;
   z-index: 2;
   opacity: 0; /* El video está oculto inicialmente */
-  pointer-events: none; 
+  pointer-events: none;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -560,8 +547,8 @@ main {
 }
 
 .video-card:hover .video {
-  opacity: 1; 
-  pointer-events: auto; 
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .overlay {
@@ -577,29 +564,29 @@ main {
 #sportswear-section {
   position: relative;
   width: 100%;
-  height: 100vh; 
+  height: auto; /* Permite que la altura se ajuste automáticamente */
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
 }
 
 #sportswear-section img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; 
-  object-fit: cover; 
-  z-index: 1;
-  filter: brightness(0.7); 
+  width: 100%; /* Asegura que la imagen ocupa todo el ancho disponible */
+  height: auto; /* Escala la altura proporcionalmente */
+  object-fit: cover; /* Mantiene las proporciones de la imagen */
+  filter: brightness(0.7); /* Mantiene el filtro para un efecto de oscurecimiento */
+  z-index: 1; /* Coloca la imagen en el fondo */
 }
 
 .sportswear-content {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el contenido */
   text-align: center;
   color: #fff;
+  z-index: 2;
 }
 
 .sportswear-content h2 {
@@ -635,10 +622,14 @@ main {
   font-weight: bold;
 }
 
+
 #colecciones-carousel {
   text-align: center;
   padding: 60px 30px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  align-items: center;
 }
 
 #colecciones-carousel h2 {
@@ -653,31 +644,44 @@ main {
 /* Contenedor del carrusel */
 .carousel-container {
   display: flex;
-  justify-content: center; /* Centra el contenido */
-  align-items: center; /* Alinea verticalmente */
   gap: 10px; /* Espaciado entre tarjetas */
-  flex-wrap: wrap; /* Permite que las tarjetas se ajusten si no hay espacio */
+  overflow-x: auto; /* Activa el scroll horizontal solo si es necesario */
+  scroll-behavior: smooth; /* Desplazamiento suave */
+  padding-bottom: 10px; /* Espacio debajo para evitar cortes */
+  max-width: 100%; /* Asegura que no se desborde */
+}
+
+.carousel-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.carousel-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
 /* Tarjetas individuales */
 .carousel-card {
-  position: relative;
-  width: 250px; 
-  height: 500px; 
+  flex: 0 0 auto; /* Impide que las tarjetas cambien de tamaño */
+  width: 250px; /* Ajusta el ancho de las tarjetas */
+  height: 500px; /* Ajusta la altura de las tarjetas */
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end; 
 }
 
 .carousel-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Asegura que las imágenes no se deformen */
 }
 
-/* Estilo de los botones */
+/* Botones */
 .carousel-card button {
   margin-top: 10px;
   background: none;
@@ -705,4 +709,275 @@ main {
 
 .carousel-card button:hover::after {
   width: 100%;
+}
+
+
+#hero-video-secondary video {
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+  z-index: -1;
+}
+
+#hero-video-secondary video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  display: block;
+}
+
+#picks-para-ti {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f5e5c5; /* Fondo beige para la sección */
+}
+
+#picks-para-ti h2 {
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+/* Contenedor del carrusel */
+#picks-para-ti .product-carousel {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start; /* Alinea las cartas al inicio */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  align-items: center;
+}
+
+/* Scroll personalizado */
+#picks-para-ti .product-carousel::-webkit-scrollbar {
+  height: 8px; /* Altura del scroll horizontal */
+}
+
+#picks-para-ti .product-carousel::-webkit-scrollbar-thumb {
+  background: #d4c2a1; /* Color beige oscuro para el pulgar del scroll */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+#picks-para-ti .product-carousel::-webkit-scrollbar-track {
+  background: #f5e5c5; /* Color beige para el track del scroll */
+}
+
+/* Para navegadores compatibles con scrollbar-color */
+#picks-para-ti .product-carousel {
+  scrollbar-color: #d4c2a1 #f5e5c5; /* Pulgar y fondo */
+  scrollbar-width: thin; /* Scroll más delgado */
+}
+
+/* Tarjetas específicas para esta sección */
+#picks-para-ti .product-card {
+  position: relative;
+  background-color: #f5e5c5; /* Fondo beige para las cartas */
+  width: 350px;
+  height: 550px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 4px 6px #f5e5c5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+}
+
+#picks-para-ti .product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#picks-para-ti .product-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+#picks-para-ti .product-info {
+  position: relative;
+  z-index: 2;
+  padding: 15px;
+  background: #f5e5c5; /* Fondo beige también para la parte inferior */
+}
+
+#picks-para-ti .product-description {
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #000;
+  font-weight: 200;
+  margin: 0;
+  text-align: left;
+}
+
+#picks-para-ti .product-price {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  margin-top: 20px;
+  text-align: left;
+}
+
+
+/* Swimwear Section */
+/* Swimwear Section */
+#swimwear-section {
+  position: relative;
+  width: 100%;
+  height: auto; /* Ajusta automáticamente la altura */
+  overflow: hidden;
+  display: flex; /* Asegura que el contenido interno esté centrado */
+  justify-content: center;
+  align-items: center;
+}
+
+#swimwear-section img {
+  width: 100%; /* La imagen ocupará todo el ancho disponible */
+  height: auto; /* Escala proporcionalmente la altura */
+  object-fit: cover; /* Mantiene las proporciones de la imagen */
+}
+
+.swimwear-content {
+  position: absolute;
+  top: 45%; /* Ajusta la posición vertical */
+  left: 30%; /* Ajusta la posición horizontal */
+  transform: translate(-50%, -50%); /* Centra el texto basado en top y left */
+  text-align: center;
+  color: #fff;
+  z-index: 2; /* Coloca el texto por encima de la imagen */
+}
+
+.swimwear-content h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.swimwear-content h1 {
+  font-family: "Cinzel", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.swimwear-content p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 35px;
+}
+
+.swimwear-content button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swimwear-content button:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #f9f9f9;
+  padding: 20px 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Espacio igual entre secciones */
+  align-items: flex-start; /* Asegura que todos comiencen en el mismo nivel */
+  gap: 20px; /* Espaciado entre las secciones */
+}
+
+.subscribe-section {
+  text-align: center;
+  flex: 1;
+}
+
+.subscribe-section button {
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+  padding: 10px 20px;
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 20px; /* Espaciado entre botón y redes sociales */
+}
+
+.subscribe-section button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.social-media a {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #555;
+}
+
+.help-section, .orders-section {
+  flex: 1; /* Ajusta el ancho de las secciones */
+}
+
+.help-section h3, .orders-section h3 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.help-section ul, .orders-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.help-section li, .orders-section li {
+  margin-bottom: 5px;
+}
+
+.help-section li a, .orders-section li a {
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+  text-decoration: none;
+}
+
+.help-section li a:hover, .orders-section li a:hover {
+  text-decoration: underline;
 }
