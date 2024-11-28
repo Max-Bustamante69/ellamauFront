@@ -37,8 +37,8 @@
 }
 
 .Nav-ofertas button:hover {
-    background-color: #f2b513;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .Nav-personal-icons {
@@ -50,34 +50,38 @@
     position: fixed;
     top: 40px;
     right: 0;
-    width: 100%;
-    z-index: 999;
-}
+    z-index: 999;}
 
 .Nav-personal-icons a {
     margin-left: 20px;
+    padding-right: 20px;
 }
 
 .Nav-personal-icons img {
     width: 20px;
     height: 20px;
-    cursor: pointer;
+}
+.Nav-personal-icons div{
+    max-width: 1500px;
+    
 }
 
 .main-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #fff;
     padding: 15px 20px;
     box-sizing: border-box;
-    margin-top: 80px;
+    margin: 0; /* Elimina el margen para evitar superposición */
+    position: relative; /* Asegura que no se salga de su flujo */
+    z-index: 1; /* Asegura que otros elementos no lo cubran o queden debajo */
 }
 
-.main-nav .izquierda {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.main-nav .separator {
+    border-right: 1px solid #000;
+    height: 20px;
+    margin: 0 10px; /* Añade espacio alrededor del separador */
 }
 
 .main-nav .izquierda img {
@@ -109,7 +113,7 @@
 
 .main-nav .derecha input {
     border: 1px solid #ccc;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 5px 10px;
     font-size: 14px;
     color: #333;
@@ -123,7 +127,7 @@
 .izquierda {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px; /* Espaciado adecuado entre elementos */
 }
 
 .flag-container {
@@ -147,7 +151,10 @@
     font-size: 14px;
     color: #000;
 }
-
+body {
+    margin: 0; 
+    padding-top: 80px;
+}
 nav {
     width: 100%;
     border-bottom: 1px solid #ccc;
@@ -171,9 +178,33 @@ nav ul li a {
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
-    transition: color 0.3s ease;
+    font-weight: 500;
+    position: relative;
 }
 
-nav ul li a:hover {
-    font-weight: bold;
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+body{
+    max-width: 1500px;
+    margin: 0 auto; 
+
+
+}
+
+header {
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
 }
