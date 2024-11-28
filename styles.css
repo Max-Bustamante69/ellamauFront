@@ -5,16 +5,18 @@
 }
 
 body {
-  max-width: 1500px;
-  margin: 0 auto;
-}
+ 
 
+  padding: 0;
+  box-sizing: border-box;
+}
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   margin: auto;
   width: fit-content;
+  z-index: 5;
 }
 
 nav ul {
@@ -201,4 +203,299 @@ nav a:hover::after {
 
 .user-menu {
   width: 100dvw;
+}
+
+#hero-video video {
+  width: 100%;
+  object-fit: cover; 
+  margin: 0 auto; 
+  overflow: hidden;
+  height: 100%;
+  z-index: -1;
+  
+}
+
+#hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  margin: 0;
+  display: block; 
+}
+
+main {
+    max-width: 1500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#nueva-lenceria-top {
+
+  background-color: #000; 
+  color: #fff;
+  text-align: center; 
+  padding: 50px 20px; 
+}
+
+#nueva-lenceria-top h2 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 2.5rem; 
+  font-weight: 400;
+  margin-bottom: 10px; 
+}
+
+#nueva-lenceria-top p {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 200;
+  font-size: 1rem; 
+  margin-bottom: 20px; 
+}
+
+#nueva-lenceria-top button {
+  background-color: #000; 
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px; 
+  font-size: 1rem; 
+  font-family: "Public Sans", sans-serif; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  position: relative; 
+  cursor: pointer;
+}
+
+#nueva-lenceria-top button::after {
+  content: ""; 
+  position: absolute; 
+  bottom: -5px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 50%;
+  height: 2px; 
+  background-color: #fff; 
+  transition: width 0.3s ease; 
+}
+
+#nueva-lenceria-top button:hover::after {
+  width: 100%;
+}
+
+
+#nueva-lenceria-bottom {
+  position: relative; 
+  width: 100%;
+  margin: 0 auto; 
+  overflow: hidden; 
+}
+
+
+#nueva-lenceria-bottom .content-overlay {
+  position: absolute; 
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  color: #fff; 
+  z-index: 2; 
+}
+
+#nueva-lenceria-bottom .content-overlay h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #ffffff; 
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+#nueva-lenceria-bottom .content-overlay h2 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 5rem; 
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+#nueva-lenceria-bottom .content-overlay p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+#nueva-lenceria-bottom .content-overlay button {
+  background-color: transparent;
+  color: #fff; 
+  border: 2px solid #fff; 
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  font-family: "Public Sans", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#nueva-lenceria-bottom .content-overlay button:hover {
+  background-color: #fff;
+  color: #000; 
+  border: 2px solid #fff; 
+}
+
+
+
+#nueva-lenceria-bottom .center-text-image-section img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+}
+
+
+
+#en-tendencia {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+#en-tendencia h2 {
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem; 
+  font-weight: 400;
+  margin-bottom:20px; 
+  color: #000;
+  text-transform: uppercase;
+}
+
+
+.product-carousel {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  align-items: center;
+}
+
+.product-card {
+  position: relative;
+  background-color: #fff;
+  width: 330px;
+  height: 500px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.product-info {
+  position: relative;
+  z-index: 2;
+  padding: 15px;
+  background: rgb(255, 255, 255);
+}
+
+.product-description {
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #000;
+  font-weight: 200;
+  margin: 0;
+  text-align: left;
+}
+
+.product-price {
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #000;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#beauty-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+#beauty-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  z-index: 1;
+}
+
+.beauty-content {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.beauty-content h3 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+.beauty-content h1 {
+  font-family: "Cinzel", serif;
+  font-size: 4rem; 
+  font-weight: 400;
+  margin-bottom:20px; 
+  color: #ffffff;
+  text-transform: uppercase;
+  
+}
+
+.beauty-content p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.beauty-content button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.beauty-content button:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
 }
