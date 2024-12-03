@@ -1,22 +1,29 @@
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base Body Styling */
 body {
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Header Styling */
 header {
   position: sticky;
   top: 0;
   left: 0;
   margin: auto;
-  width: fit-content;
-  z-index: 5;
+  width: fit-content; /* Adjusts header width to content */
+  z-index: 5; /* Ensures header stays above other elements */
 }
 
+
+
+/* Navigation bar: styles list items for horizontal navigation */
 nav ul {
   display: flex;
   list-style: none;
@@ -25,6 +32,7 @@ nav ul {
   gap: 100px;
 }
 
+/* Navigation links: base style */
 nav a {
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
@@ -35,6 +43,7 @@ nav a {
   position: relative;
 }
 
+/* Navigation links: animation for hover effect */
 nav a::after {
   content: "";
   position: absolute;
@@ -45,11 +54,11 @@ nav a::after {
   background-color: #000;
   transition: width 0.3s ease;
 }
-
+/* Navigation links: hover state */
 nav a:hover::after {
   width: 100%;
 }
-
+/* Styles the promotional bar at the top of the page */
 .nav-ofertas {
   font-family: "Public Sans", sans-serif;
   font-weight: 500;
@@ -68,10 +77,12 @@ nav a:hover::after {
   gap: 4rem;
 }
 
+/* Styles the text inside the promotional bar */
 .nav-ofertas p {
   text-align: center;
 }
 
+/* Styles the button inside the promotional bar */
 .nav-ofertas button {
   background-color: black;
   color: #ffffff;
@@ -83,11 +94,13 @@ nav a:hover::after {
   border-radius: 5px;
 }
 
+/* Button hover effect */
 .nav-ofertas button:hover {
   background-color: #ffffff;
   color: #000000;
 }
 
+/* Styles the user menu bar with account and shopping cart icons */
 .user-menu {
   background-color: #f2b513;
   display: flex;
@@ -96,12 +109,15 @@ nav a:hover::after {
   align-items: center;
   padding: 12px 20px;
 }
-
+/* Sizes the icons in the user menu */
 .user-menu img {
   width: 20px;
   height: 20px;
 }
 
+
+
+/* Styles the main navigation bar */
 .main-nav {
   display: flex;
   flex-direction: column;
@@ -109,39 +125,46 @@ nav a:hover::after {
   width: 100dvw;
   background-color: #fff;
   padding: 15px 23px 0 20px;
-  margin: 0; /* Elimina el margen para evitar superposición */
-  position: relative; /* Asegura que no se salga de su flujo */
-  z-index: 1; /* Asegura que otros elementos no lo cubran o queden debajo */
+  margin: 0; 
+  position: relative; 
+  z-index: 1; 
   gap: 2rem;
 }
 
+/* Styles the separators in the navigation bar */
 .main-nav .container .separator {
   border-right: 1px solid #000;
   height: 20px;
-  margin: 0 10px; /* Añade espacio alrededor del separador */
+  margin: 0 10px; 
 }
 
+/* Styles the images in the region info section */
 .region-info img {
   width: 20px;
   height: auto;
 }
 
+/* Styles the spans inside the navigation container */
 .main-nav .container span {
   font-family: "Public Sans", sans-serif;
   font-size: 10px;
   color: #000;
 }
 
+
+/* Styles the separator in the region info section */
 .region-info .separador {
   border-right: 1px solid #000;
   height: 20px;
 }
 
+/* Styles the logo inside the main navigation */
 .main-nav .logo {
   height: 70px;
   margin: 0 auto;
 }
 
+/* Styles the search input in the navigation container */
 .main-nav .container input {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -151,26 +174,31 @@ nav a:hover::after {
   width: px;
 }
 
+/* Styles the placeholder text inside the input */
 .main-nav .container input::placeholder {
   color: #aaa;
 }
 
+/* Aligns and spaces elements in the region info section */
 .region-info {
   display: flex;
   align-items: center;
-  gap: 10px; /* Espaciado adecuado entre elementos */
+  gap: 10px; 
 }
 
+/* Ensures the flag container aligns its items properly */
 .flag-container {
   display: flex;
   align-items: center;
 }
 
+/* Styles the flag images in the container */
 .flag-container img {
   width: 20px;
   height: auto;
 }
 
+/* Styles the navigation bar */
 .main-nav nav {
   width: 100%;
   max-width: 1500px;
@@ -181,6 +209,7 @@ nav a:hover::after {
   padding-bottom: 5px;
 }
 
+/* Container for the main navigation */
 .nav-container {
   width: 100dvw;
   display: flex;
@@ -188,6 +217,7 @@ nav a:hover::after {
   align-items: center;
 }
 
+/* Ensures a consistent layout for the navigation content */
 .main-nav .container {
   max-width: 1500px;
   display: flex;
@@ -196,10 +226,13 @@ nav a:hover::after {
   align-items: center;
 }
 
+/* Sets the width for the user menu section */
 .user-menu {
   width: 100dvw;
 }
 
+/* Hero video styling */
+/* Ensures the video fully adapts to its container and appears as a background element */
 #hero-video video {
   width: 100%;
   object-fit: cover;
@@ -217,12 +250,17 @@ nav a:hover::after {
   display: block;
 }
 
+
+/* Main content container styling */
+/* Defines the central layout container for the main content */
 main {
   max-width: 1500px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
+/* Nueva Lencería Section Top Styling */
+/* Top section for New Lingerie, providing a dark background and centered content */
 #nueva-lenceria-top {
   background-color: #000;
   color: #fff;
@@ -230,6 +268,7 @@ main {
   padding: 50px 20px;
 }
 
+/* Heading styling within Nueva Lencería Top */
 #nueva-lenceria-top h2 {
   font-family: "Cinzel Decorative", serif;
   font-size: 2.5rem;
@@ -237,6 +276,8 @@ main {
   margin-bottom: 10px;
 }
 
+
+/* Paragraph styling for text in the section */
 #nueva-lenceria-top p {
   font-family: "Public Sans", sans-serif;
   font-weight: 200;
@@ -244,6 +285,7 @@ main {
   margin-bottom: 20px;
 }
 
+/* Button styling within Nueva Lencería Top */
 #nueva-lenceria-top button {
   background-color: #000;
   color: #fff;
@@ -257,6 +299,7 @@ main {
   cursor: pointer;
 }
 
+/* Button hover effect */
 #nueva-lenceria-top button::after {
   content: "";
   position: absolute;
@@ -269,10 +312,12 @@ main {
   transition: width 0.3s ease;
 }
 
+/* Button hover effect to expand underline */
 #nueva-lenceria-top button:hover::after {
   width: 100%;
 }
 
+/* Nueva Lencería Section Bottom Styling */
 #nueva-lenceria-bottom {
   position: relative;
   width: 100%;
@@ -280,6 +325,7 @@ main {
   overflow: hidden;
 }
 
+/* Content overlay in the bottom section */
 #nueva-lenceria-bottom .content-overlay {
   position: absolute;
   top: 50%;
@@ -290,6 +336,7 @@ main {
   z-index: 2;
 }
 
+/* Heading and text inside the overlay */
 #nueva-lenceria-bottom .content-overlay h3 {
   font-family: "Inter", sans-serif;
   font-weight: 100;
@@ -307,12 +354,14 @@ main {
   margin-bottom: 30px;
 }
 
+/* Paragraph inside overlay */
 #nueva-lenceria-bottom .content-overlay p {
   font-family: "Public Sans", sans-serif;
   font-size: 1rem;
   margin-bottom: 40px;
 }
 
+/* Button inside overlay */
 #nueva-lenceria-bottom .content-overlay button {
   background-color: transparent;
   color: #fff;
@@ -325,24 +374,29 @@ main {
   transition: all 0.3s ease;
 }
 
+/* Button hover effect */
 #nueva-lenceria-bottom .content-overlay button:hover {
   background-color: #fff;
   color: #000;
   border: 2px solid #fff;
 }
 
+
+/* Image section inside bottom section */
 #nueva-lenceria-bottom .center-text-image-section img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
+/* Trending Section Styling */
 #en-tendencia {
   text-align: center;
   padding: 50px 20px;
   background-color: #fff;
 }
 
+/* Heading Styling for Trending Section */
 #en-tendencia h2 {
   font-family: "Cinzel", serif;
   font-size: 2.5rem;
@@ -352,7 +406,7 @@ main {
   text-transform: uppercase;
 }
 
-/* Contenedor del carrusel */
+/* Product Carousel Styling */
 .product-carousel {
   display: flex;
   gap: 15px;
@@ -366,6 +420,7 @@ main {
   align-items: center;
 }
 
+/* Individual Product Card Styling */
 .product-card {
   position: relative;
   background-color: #fff;
@@ -381,11 +436,13 @@ main {
   flex-shrink: 0;
 }
 
+/* Hover Effect for Product Card */
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Image Styling within Product Card */
 .product-card img {
   position: absolute;
   top: 0;
@@ -397,6 +454,7 @@ main {
   z-index: 1;
 }
 
+/* Styling for Product Info Section */
 .product-info {
   position: relative;
   z-index: 2;
@@ -404,6 +462,7 @@ main {
   background: rgb(255, 255, 255);
 }
 
+/* Product Description Styling */
 .product-description {
   font-family: "Public Sans", sans-serif;
   font-size: 0.9rem;
@@ -413,6 +472,7 @@ main {
   text-align: left;
 }
 
+/* Product Price Styling */
 .product-price {
   font-family: "Public Sans", sans-serif;
   font-size: 1rem;
@@ -422,32 +482,35 @@ main {
   text-align: left;
 }
 
-
+/* Beauty Section Styling */
 #beauty-section {
   position: relative;
   width: 100%;
-  height: auto; /* Permite que la altura se ajuste automáticamente */
+  height: auto; 
   overflow: hidden;
-  display: flex; /* Asegura que el contenido interno esté centrado */
+  display: flex; 
   justify-content: center;
   align-items: center;
 }
 
+/* Image Styling in Beauty Section */
 #beauty-section img {
   width: 100%;
-  height: auto; /* Escala proporcionalmente la altura */
+  height: auto;
 }
 
+/* Beauty Section Content Styling */
 .beauty-content {
   position: absolute;
   top: 45%;
   left: 40%;
-  transform: translate(-50%, -50%); /* Centra el texto */
+  transform: translate(-50%, -50%); 
   text-align: center;
   color: #fff;
   z-index: 2;
 }
 
+/* Subheading Styling */
 .beauty-content h3 {
   font-family: "Public Sans", sans-serif;
   font-size: 1.2rem;
@@ -455,6 +518,7 @@ main {
   font-weight: 200;
 }
 
+/* Main Heading Styling */
 .beauty-content h1 {
   font-family: "Cinzel", serif;
   font-size: 4rem;
@@ -464,12 +528,14 @@ main {
   text-transform: uppercase;
 }
 
+/* Paragraph Styling */
 .beauty-content p {
   font-family: "Public Sans", sans-serif;
   font-size: 1rem;
   margin-bottom: 30px;
 }
 
+/* Button Styling */
 .beauty-content button {
   background-color: transparent;
   color: #fff;
@@ -480,20 +546,23 @@ main {
   transition: all 0.3s ease;
 }
 
+
+/* Button Hover Effect */
 .beauty-content button:hover {
   background-color: #fff;
   color: #000;
   font-weight: bold;
 }
 
-/* Descubre las Colecciones */
-/* Carrusel de Videos */
+
+/* Discover Collections Section Styling */
 #descubre-colecciones {
   padding: 50px 20px;
   background-color: #fff;
   text-align: center;
 }
 
+/* Heading Styling */
 #descubre-colecciones h2 {
   font-family: "Cinzel", serif;
   font-size: 2.5rem;
@@ -503,6 +572,7 @@ main {
   text-transform: uppercase;
 }
 
+/* Video Carousel Styling */
 .video-carousel {
   display: flex;
   gap: 60px;
@@ -510,6 +580,7 @@ main {
   align-items: center;
 }
 
+/* Video Card Styling */
 .video-card {
   position: relative;
   width: 300px;
@@ -518,6 +589,7 @@ main {
   cursor: pointer;
 }
 
+/* Thumbnail Image Styling */
 .thumbnail {
   width: 100%;
   height: 100%;
@@ -529,6 +601,7 @@ main {
   transition: opacity 0.3s ease-in-out;
 }
 
+/* Video Styling */
 .video {
   width: 100%;
   height: 100%;
@@ -542,6 +615,8 @@ main {
   transition: opacity 0.3s ease-in-out;
 }
 
+
+/* Hover Effects */
 .video-card:hover .thumbnail {
   opacity: 0;
 }
@@ -550,7 +625,7 @@ main {
   opacity: 1;
   pointer-events: auto;
 }
-
+/* Overlay Styling */
 .overlay {
   position: absolute;
   bottom: 10px;
@@ -560,25 +635,29 @@ main {
   color: #fff;
   z-index: 3;
 }
-/* Sportswear Section */
+
+/* Sportswear Section Styling */
 #sportswear-section {
   position: relative;
   width: 100%;
-  height: auto; /* Permite que la altura se ajuste automáticamente */
+  height: auto; 
   overflow: hidden;
   display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; 
+  align-items: center; 
 }
 
+
+/* Image Styling for Sportswear Section */
 #sportswear-section img {
-  width: 100%; /* Asegura que la imagen ocupa todo el ancho disponible */
-  height: auto; /* Escala la altura proporcionalmente */
-  object-fit: cover; /* Mantiene las proporciones de la imagen */
-  filter: brightness(0.7); /* Mantiene el filtro para un efecto de oscurecimiento */
-  z-index: 1; /* Coloca la imagen en el fondo */
+  width: 100%; 
+  height: auto;
+  object-fit: cover; 
+  filter: brightness(0.7); 
+  z-index: 1; 
 }
 
+/* Sportswear Section Content Styling */
 .sportswear-content {
   position: absolute;
   top: 50%;
@@ -589,6 +668,8 @@ main {
   z-index: 2;
 }
 
+
+/* Sportswear Section Heading */
 .sportswear-content h2 {
   font-family: "Cinzel", serif;
   font-size: 2.5rem;
@@ -597,12 +678,15 @@ main {
   text-transform: uppercase;
 }
 
+
+/* Sportswear Section Paragraph Styling */
 .sportswear-content p {
   font-family: "Public Sans", sans-serif;
   font-size: 1rem;
   margin-bottom: 30px;
 }
 
+/* Sportswear Section Button Styling */
 .sportswear-content button {
   background-color: transparent;
   color: #fff;
@@ -616,6 +700,7 @@ main {
   transition: all 0.3s ease;
 }
 
+/* Button Hover Effect */
 .sportswear-content button:hover {
   background-color: #fff;
   color: #000;
@@ -628,9 +713,11 @@ main {
   padding: 60px 30px;
   background-color: #fff;
   display: flex;
-  flex-direction: column; /* Alinea los elementos verticalmente */
+  flex-direction: column; 
   align-items: center;
 }
+
+
 
 #colecciones-carousel h2 {
   font-family: "Cinzel", serif;
@@ -641,15 +728,16 @@ main {
   text-transform: uppercase;
 }
 
-/* Contenedor del carrusel */
+
 .carousel-container {
   display: flex;
-  gap: 10px; /* Espaciado entre tarjetas */
-  overflow-x: auto; /* Activa el scroll horizontal solo si es necesario */
-  scroll-behavior: smooth; /* Desplazamiento suave */
-  padding-bottom: 10px; /* Espacio debajo para evitar cortes */
-  max-width: 100%; /* Asegura que no se desborde */
+  gap: 10px; 
+  overflow-x: auto; 
+  scroll-behavior: smooth;
+  padding-bottom: 10px; 
+  max-width: 100%;
 }
+
 
 .carousel-container::-webkit-scrollbar {
   height: 8px;
@@ -664,11 +752,10 @@ main {
   background: #f1f1f1;
 }
 
-/* Tarjetas individuales */
 .carousel-card {
-  flex: 0 0 auto; /* Impide que las tarjetas cambien de tamaño */
-  width: 250px; /* Ajusta el ancho de las tarjetas */
-  height: 500px; /* Ajusta la altura de las tarjetas */
+  flex: 0 0 auto;
+  width: 250px; 
+  height: 500px; 
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -678,10 +765,10 @@ main {
 .carousel-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Asegura que las imágenes no se deformen */
+  object-fit: cover; 
 }
 
-/* Botones */
+
 .carousel-card button {
   margin-top: 10px;
   background: none;
@@ -695,6 +782,7 @@ main {
   position: relative;
 }
 
+
 .carousel-card button::after {
   content: "";
   position: absolute;
@@ -706,6 +794,7 @@ main {
   background-color: #000;
   transition: width 0.3s ease;
 }
+
 
 .carousel-card button:hover::after {
   width: 100%;
@@ -744,7 +833,7 @@ main {
   text-transform: uppercase;
 }
 
-/* Contenedor del carrusel */
+
 #picks-para-ti .product-carousel {
   display: flex;
   gap: 15px;
@@ -758,7 +847,7 @@ main {
   align-items: center;
 }
 
-/* Scroll personalizado */
+
 #picks-para-ti .product-carousel::-webkit-scrollbar {
   height: 8px; /* Altura del scroll horizontal */
 }
@@ -772,13 +861,13 @@ main {
   background: #f5e5c5; /* Color beige para el track del scroll */
 }
 
-/* Para navegadores compatibles con scrollbar-color */
+
 #picks-para-ti .product-carousel {
   scrollbar-color: #d4c2a1 #f5e5c5; /* Pulgar y fondo */
   scrollbar-width: thin; /* Scroll más delgado */
 }
 
-/* Tarjetas específicas para esta sección */
+
 #picks-para-ti .product-card {
   position: relative;
   background-color: #f5e5c5; /* Fondo beige para las cartas */
@@ -837,28 +926,27 @@ main {
 
 
 /* Swimwear Section */
-/* Swimwear Section */
 #swimwear-section {
   position: relative;
   width: 100%;
-  height: auto; /* Ajusta automáticamente la altura */
+  height: auto; 
   overflow: hidden;
-  display: flex; /* Asegura que el contenido interno esté centrado */
+  display: flex; 
   justify-content: center;
   align-items: center;
 }
 
 #swimwear-section img {
-  width: 100%; /* La imagen ocupará todo el ancho disponible */
-  height: auto; /* Escala proporcionalmente la altura */
-  object-fit: cover; /* Mantiene las proporciones de la imagen */
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
 }
 
 .swimwear-content {
   position: absolute;
-  top: 45%; /* Ajusta la posición vertical */
-  left: 30%; /* Ajusta la posición horizontal */
-  transform: translate(-50%, -50%); /* Centra el texto basado en top y left */
+  top: 45%; 
+  left: 30%; 
+  transform: translate(-50%, -50%); 
   text-align: center;
   color: #fff;
   z-index: 2; /* Coloca el texto por encima de la imagen */
@@ -912,9 +1000,9 @@ footer {
 
 .footer-container {
   display: flex;
-  justify-content: space-between; /* Espacio igual entre secciones */
-  align-items: flex-start; /* Asegura que todos comiencen en el mismo nivel */
-  gap: 20px; /* Espaciado entre las secciones */
+  justify-content: space-between; 
+  align-items: flex-start; 
+  gap: 20px; 
 }
 
 .subscribe-section {
