@@ -21,8 +21,6 @@ header {
   z-index: 5; /* Ensures header stays above other elements */
 }
 
-
-
 /* Navigation bar: styles list items for horizontal navigation */
 nav ul {
   display: flex;
@@ -115,8 +113,6 @@ nav a:hover::after {
   height: 20px;
 }
 
-
-
 /* Styles the main navigation bar */
 .main-nav {
   display: flex;
@@ -125,9 +121,9 @@ nav a:hover::after {
   width: 100dvw;
   background-color: #fff;
   padding: 15px 23px 0 20px;
-  margin: 0; 
-  position: relative; 
-  z-index: 1; 
+  margin: 0;
+  position: relative;
+  z-index: 1;
   gap: 2rem;
 }
 
@@ -135,7 +131,7 @@ nav a:hover::after {
 .main-nav .container .separator {
   border-right: 1px solid #000;
   height: 20px;
-  margin: 0 10px; 
+  margin: 0 10px;
 }
 
 /* Styles the images in the region info section */
@@ -150,7 +146,6 @@ nav a:hover::after {
   font-size: 10px;
   color: #000;
 }
-
 
 /* Styles the separator in the region info section */
 .region-info .separador {
@@ -183,7 +178,7 @@ nav a:hover::after {
 .region-info {
   display: flex;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
 }
 
 /* Ensures the flag container aligns its items properly */
@@ -260,12 +255,15 @@ main {
   padding: 20px; /* Espaciado interno opcional */
 }
 
+/*estilado de a, eliminacion de subrayado */
 a {
-  text-decoration: none; /* Elimina subrayado */
-  color: inherit; /* Hereda color del contenedor */
-  outline: none; /* Elimina cualquier borde que pueda generar la línea */
+  text-decoration: none;
+  color: inherit;
+  outline: none;
 }
-/* Breadcrumb */
+
+/*````````````````````LINGERIE SECTION```````````````````````````````*/
+/* Breadcrumb ellamau */
 .breadcrumb {
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
@@ -274,18 +272,7 @@ a {
   text-align: left;
 }
 
-.breadcrumb a {
-  text-decoration: none; /* Elimina subrayado */
-  color: #000;
-  font-weight: normal;
-}
-
-.breadcrumb span {
-  font-weight: normal;
-  color: #000;
-}
-
-/* Título principal */
+/* Título principal lingerie */
 .lingerie-carousel h2 {
   font-family: "Public Sans", sans-serif;
   font-size: 20px;
@@ -296,27 +283,30 @@ a {
   text-align: left;
 }
 
-/* Carrusel */
+/* Carrusel lingerie */
 .carousel-container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   gap: 4px;
-  max-width: 100%; 
-  margin: 0 auto; 
+  max-width: 100%;
+  margin: 0 auto;
 }
 
+/* Carrusel items lingerie */
 .carousel-item {
-  flex: 0 0 calc(100% / 6 - 20px); /* Seis columnas iguales */
+  flex: 0 0 calc(100% / 6 - 20px);
   text-align: center;
-  margin: 0 10px; /* Márgenes laterales consistentes */
+  margin: 0 10px;
 }
 
+/* Carrusel image lingerie */
 .carousel-item img {
-  width: 100%; 
+  width: 100%;
   height: 300px;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
+/* Carrusel text lingerie */
 .carousel-title {
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
@@ -324,4 +314,217 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 10px;
+}
+
+/* Sección de filtros */
+.filters {
+  margin-top: 30px;
+  text-align: left;
+  padding: 0 20px;
+}
+/*contenedor de filtros alineacion*/
+.filters-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaciado entre texto y botones */
+  max-width: 1500px;
+  margin: 0 auto; /* Centra el contenido dentro del main */
+}
+/*texto de filtdo por */
+.filters-container p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+/*espacio entre los filtros*/
+.filters-buttons {
+  display: flex;
+  gap: 10px; /* Espaciado entre los botones */
+}
+
+/*boton de filtro*/
+.filters-buttons button {
+  font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+  padding: 10px 15px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/*boton de filtro animacion*/
+.filters-buttons button:hover {
+  background-color: #000; /* Fondo negro al pasar el mouse */
+  color: #fff; /* Texto blanco en hover */
+}
+
+
+/*```````````````````````` Sección Recomendados ````````````````````````````*/
+.recommended-section {
+  max-width: 1500px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* Contenedor principal */
+.recommended-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Banner grande a la izquierda */
+.banner {
+  flex: 1 1 50%; 
+  background-color: #a10e0e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px; 
+}
+
+.banner-content h3 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.banner-content p {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Tarjetas de producto alineadas horizontalmente */
+.right-grid {
+  flex: 1 1 50%; 
+  display: flex;
+  flex-direction: row; 
+  gap: 20px;
+  justify-content: space-between;
+}
+
+
+/* Tarjeta de producto */
+.product-card {
+  position: relative;
+  width: 100%;
+  height: 600px; 
+
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+/* Imagen del producto */
+.product-image {
+  display: block;
+  width: 100%;
+  height: calc(
+    100% - 130px
+  ); 
+  object-fit: cover; 
+  margin: 0;
+}
+
+/* Información del producto */
+.product-info {
+  position: relative;
+  height: 130px;
+  padding: 10px 20px; 
+  background: #fff; /* Fondo blanco */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  gap: 5px;
+}
+
+/* Opciones de color */
+.color-options {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px; 
+  margin-bottom: 10px;
+  justify-content: flex-start; 
+  margin-left: 10px; 
+}
+
+/* Color individual */
+.color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+  border: 1px solid #000;
+  cursor: pointer; 
+  background-color: transparent; 
+  transition: transform 0.2s ease;
+}
+
+.color.black {
+  background-color: #000;
+}
+
+.color.white {
+  background-color: #fff;
+}
+
+.color:hover {
+  transform: scale(1.2); 
+}
+
+/* Nombre del producto */
+.product-name {
+  font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+  margin-left: 10px; 
+}
+
+/* Precio del producto */
+.product-price {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px; 
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  margin-left: 10px;
+}
+
+/* Cuadrícula de productos */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); 
+  gap: 30px; 
+  margin-top: 30px; 
+}
+
+/* Tarjetas dentro de la cuadrícula */
+.product-card {
+  margin: 0; 
 }
