@@ -1,0 +1,569 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Body Styling */
+body {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+}
+
+/* Header Styling */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: fit-content; 
+  z-index: 5; 
+}
+
+/* Navigation bar: styles list items for horizontal navigation */
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 100px;
+}
+
+/* Navigation links: base style */
+nav a {
+  font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Navigation links: animation for hover effect */
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+/* Navigation links: hover state */
+nav a:hover::after {
+  width: 100%;
+}
+/* Styles the promotional bar at the top of the page */
+.nav-ofertas {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-style: normal;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  z-index: 10;
+  gap: 4rem;
+}
+
+/* Styles the text inside the promotional bar */
+.nav-ofertas p {
+  text-align: center;
+}
+
+/* Styles the button inside the promotional bar */
+.nav-ofertas button {
+  background-color: black;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 0.5rem;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Button hover effect */
+.nav-ofertas button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Styles the user menu bar with account and shopping cart icons */
+.user-menu {
+  background-color: #f2b513;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px 20px;
+}
+/* Sizes the icons in the user menu */
+.user-menu img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Styles the main navigation bar */
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100dvw;
+  background-color: #fff;
+  padding: 15px 23px 0 20px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  gap: 2rem;
+}
+
+/* Styles the separators in the navigation bar */
+.main-nav .container .separator {
+  border-right: 1px solid #000;
+  height: 20px;
+  margin: 0 10px;
+}
+
+/* Styles the images in the region info section */
+.region-info img {
+  width: 20px;
+  height: auto;
+}
+
+/* Styles the spans inside the navigation container */
+.main-nav .container span {
+  font-family: "Public Sans", sans-serif;
+  font-size: 10px;
+  color: #000;
+}
+
+/* Styles the separator in the region info section */
+.region-info .separador {
+  border-right: 1px solid #000;
+  height: 20px;
+}
+
+/* Styles the logo inside the main navigation */
+.main-nav .logo {
+  height: 70px;
+  margin: 0 auto;
+}
+
+/* Styles the search input in the navigation container */
+.main-nav .container input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #333;
+  width: px;
+}
+
+/* Styles the placeholder text inside the input */
+.main-nav .container input::placeholder {
+  color: #aaa;
+}
+
+/* Aligns and spaces elements in the region info section */
+.region-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Ensures the flag container aligns its items properly */
+.flag-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles the flag images in the container */
+.flag-container img {
+  width: 20px;
+  height: auto;
+}
+
+/* Styles the navigation bar */
+.main-nav nav {
+  width: 100%;
+  max-width: 1500px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+/* Container for the main navigation */
+.nav-container {
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ensures a consistent layout for the navigation content */
+.main-nav .container {
+  max-width: 1500px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Sets the width for the user menu section */
+.user-menu {
+  width: 100dvw;
+}
+
+/*```````````````` seccion de productos `````````````````````````````````````*/
+
+
+/* Galería de Productos */
+.product-gallery-section {
+  margin: 20px auto;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+}
+/* contenedor informacion del producto */
+.product-container {
+  display: flex;
+  gap: 20px; 
+  max-width: 1190px; 
+  margin: 0 auto; 
+  align-items: flex-start; 
+}
+/*seccion de las imagenes*/
+.image-section {
+  flex: 1;
+  max-width: 450px; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+/*imagen principal contendor*/
+.main-image {
+  width: 100%;
+  aspect-ratio: 4 / 5; 
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+/*imagen principal*/
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+
+}
+/*thumbnails debajo de la imagen principal*/
+.thumbnails {
+  display: flex;
+  gap: 10px; 
+  justify-content: flex-start;
+  margin-top: 1px;
+}
+.thumbnails img:hover {
+  filter: brightness(100%); 
+}
+/*contenedor thumbnail*/
+.thumbnail-container {
+  width: 220px; 
+  height: 220px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+
+  background-color: #f5f5f5; 
+  transition: transform 0.3s ease, filter 0.3s ease; 
+}
+/*imagen thumbnails*/
+.thumbnail-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  justify-content: center; 
+}
+/*contenedor de detalles del producto*/
+.product-details {
+  flex: 1;
+  max-width: 600px; 
+  height: calc(100% - 50px); 
+  overflow-y: auto; 
+  padding: 20px; 
+  border-radius: 5px;
+  background-color: #fff;
+}
+/*titulo del producto*/
+.product-details h1{
+  font-weight: 300;
+  font-size: 0.9rem;
+  padding-bottom: 2%; 
+}
+/*precio del producto*/
+.product-details h2 {
+  font-size: 1rem;
+  font-weight: 500; 
+  padding-bottom:2% ;
+}
+/*descripcion del producto*/
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+/*consejo agregado al producto*/
+.fit-advice {
+  border-left: 2px solid #f2b513;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+/*anadir a la bolsa*/
+.add-to-cart {
+  background-color: #f2b513;
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.add-to-cart:hover {
+  background-color: #d4ac0d;
+}
+/*nota de compras hechas (se compraron mas de 2000 en el ultimo dia)*/
+.purchase-notice {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  background-color: #fff5c4; 
+  color: #555; 
+  font-size: 13px;
+  padding: 5px 12px; 
+  border-radius: 5px; 
+  margin-bottom: 15px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  position: relative; 
+  overflow: visible; 
+  max-width: 350px;
+  margin-left: 0;
+}
+
+.purchase-notice .icon {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  font-size: 16px; 
+}
+
+.purchase-notice::after {
+  content: "";
+  position: absolute;
+  right: -10px; 
+  top: 0;
+  bottom: 0;
+  width: 15px;
+  background-color: #fff5c4; 
+  border-top-right-radius: 5px; 
+  border-bottom-right-radius: 5px;
+}
+/* opciones de color de producto*/
+.color-options {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+/* botones del color*/
+.color {
+  width: 25px;
+  height: 25px;
+  border: 2px solid transparent;
+  border-radius: 50%; 
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  position: relative;
+  overflow: hidden;
+}
+.colors strong {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #555;
+}
+.color.red {
+  background-color: rgb(220, 96, 96);
+}
+
+.color.black {
+  background-color: black;
+}
+
+.color.white {
+  background-color: white;
+  border: 1px solid black; 
+}
+
+
+.color:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.color:focus {
+  outline: none; 
+  border: 2px solid #555;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); 
+}
+
+
+.color::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+}
+
+.color:hover::after {
+  width: 80%; 
+  height: 80%;
+  opacity: 0;
+}
+/* opciones de tamano del producto s-xl*/
+.size-options {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 20px; 
+  align-items: center;
+}
+
+.size-btn {
+  width: 50px;
+  height: 40px; 
+  font-size: 16px; 
+  font-weight: bold;
+  color: #555; 
+  border: 2px solid #f0f0f0;
+  background-color: #f0f0f0; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease; 
+}
+
+
+.size-btn:hover {
+  background-color: #e0e0e0; 
+}
+
+
+.size-btn:focus {
+  outline: none;
+  background-color: #d4d4d4; 
+  color: #333; 
+}
+.sizes strong {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #555;
+}
+
+/* opciones de cantidad del producto*/
+.quantity {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  overflow: hidden; 
+  background-color: #efeaea; 
+  width: fit-content; 
+}
+
+.quantity-btn {
+  width: 40px; 
+  height: 40px; 
+  font-size: 18px; 
+  font-weight: bold;
+  color: #555;
+  background-color: #f0f0f0; 
+  border: none; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.quantity-btn:hover {
+  background-color: #e0e0e0; 
+}
+
+.quantity-input {
+  width: 25px; 
+  height: 40px; 
+  text-align: center; 
+  font-size: 16px; 
+  font-weight: bold;
+  color: #333;
+  border: none; 
+  background-color: #f0f0f0; 
+  appearance: none; 
+}
+
+
+.quantity-input:focus {
+  outline: none;
+}
+
+/* boton para anadir a la bolsa*/
+.add-to-cart {
+  background-color: #f2b513; 
+  color: #fff; 
+  font-size: 16px; 
+  font-weight: bold; 
+  padding: 12px 20px; 
+  cursor: pointer; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  width: 100%; 
+  max-width: 300px; 
+  margin: 20px auto; 
+  transition: background-color 0.3s ease; 
+  border-radius: 0;
+}
+
+
+.add-to-cart:hover {
+  background-color: #ffe063; }
+
